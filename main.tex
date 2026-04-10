@@ -60,110 +60,240 @@ We review the method of exact solutions of the Dirac equation in external electr
 \section{Introduction}
 \label{sec:intro}
 
-% Based on slides 3--10: overview of neutrino electromagnetic properties,
-% review papers (Giunti, Studenikin Rev.Mod.Phys. 2015),
-% two approaches to particle interactions in external fields,
-% method of exact solutions vs perturbation theory.
+It is widely believed that neutrino electromagnetic properties, and the magnetic moment in particular, open a window to new physics beyond the Standard Model. Several years ago a comprehensive review on this subject, ``Neutrino electromagnetic interactions: A window to new physics,'' was published~\cite{Giunti:2015RMP}, which remains among the most complete references in the field with approximately 600 citations. More recent overviews of neutrino electromagnetic properties can be found in~\cite{Studenikin:2022PoS,Studenikin:2024PPN}.
 
+The straightforward consequence of neutrino nonzero mass is the prediction~\cite{Fujikawa:Shrock:1980} that neutrinos can have nonzero magnetic moments. In the simplest extension of the Standard Model, the neutrino magnetic moment is proportional to the neutrino mass and is given by
+\begin{equation}
+\label{eq:mu_SM}
+\mu_\nu = \frac{3\, e\, G_F\, m_\nu}{8\sqrt{2}\,\pi^2} \approx 3.2 \times 10^{-19}\,\Big(\frac{m_\nu}{1\,\text{eV}}\Big)\,\mu_B,
+\end{equation}
+where $\mu_B$ is the Bohr magneton. Using the recent KATRIN upper limit on the neutrino mass of $m_\nu < 0.45$~eV, one obtains a value of $\mu_\nu \approx 10^{-19}\,\mu_B$, which is many orders of magnitude smaller than the present experimental limits from the reactor experiment GEMMA~\cite{GEMMA:2012} and the solar experiment Borexino~\cite{Borexino:2017}, as well as limits from astrophysics~\cite{Raffelt:1990}.
+
+In quantum electrodynamics and more general models of interaction, there exist two fundamentally different approaches to treating particle interactions in external electromagnetic fields. The first, perturbative approach, treats the external field as an additional interaction and incorporates it through additional lines on Feynman diagrams. This approach is inherently limited by the strength of the external field and cannot account for nonlinear effects. The second approach --- the method of exact solutions --- is based on finding exact solutions of the Dirac equation in the presence of the external field, which are then used as a basis for the quantum field theory (the Furry representation). This latter approach is not limited by the field strength and naturally accounts for nonlinear effects, making it particularly suitable for studying particle processes in the strong electromagnetic fields and dense media encountered in astrophysical environments.
+
+In the present paper, based on the invited talk at the 25th Hellenic School and Workshops on Elementary Particle Physics and Gravity (Corfu, 2025), we provide a review of several interrelated topics. We begin with a discussion of the method of exact solutions of the Dirac equation --- the Furry representation in QED --- and its applications to synchrotron radiation and beta-decay processes in external magnetic fields (Sec.~\ref{sec:furry}). We then extend this method to neutrino processes in magnetic fields and matter (Sec.~\ref{sec:nu-exact}). The electromagnetic properties of massive neutrinos are reviewed in Sec.~\ref{sec:emp}, followed by a discussion of the processes of electromagnetic interactions of neutrinos (Sec.~\ref{sec:processes}) and their astrophysical consequences and constraints (Sec.~\ref{sec:astro}). After a brief historical overview of neutrino oscillations (Sec.~\ref{sec:history}), we present new effects in neutrino flavour, spin, and spin-flavour oscillations in magnetic fields and moving matter (Sec.~\ref{sec:new-effects}), concluding in Sec.~\ref{sec:conclusions}.
+
+
+% ============================================================
 
 \section{Method of exact solutions --- Furry representation in QED}
 \label{sec:furry}
 
-% Based on slides 10--21: Furry representation (1951),
-% exact solutions of Dirac equation in magnetic field (Rabi 1928, Landau levels),
-% synchrotron radiation, beta-decay of neutron in magnetic field,
-% applications to astrophysics (supernovae dynamics).
+The method of exact solutions provides a consistent framework for treating particle interactions in external electromagnetic fields beyond the perturbation theory expansion. In the Furry representation of quantum electrodynamics, introduced in 1951, the potential of the electromagnetic field is split into a classical (nonquantized) part and a quantized part. The classical external field is incorporated exactly into the particle wave functions through the Dirac equation, while the quantized part of the electromagnetic potential enters the evolution operator and is treated perturbatively. This approach allows one to go beyond the perturbation series expansion and to account for strong-field and nonlinear effects.
 
+The exact solutions of the Dirac equation for electrons and protons in external electromagnetic fields have a long and rich history. The solution in the Coulomb potential was obtained by Dirac himself in 1928. The solution in a constant magnetic field was found by Rabi in 1928, demonstrating that the electron energy is quantized in a magnetic field, with the energy spectrum given by the Landau levels
+\begin{equation}
+\label{eq:landau}
+E_n = \sqrt{p_3^2 + m_e^2 + 2\,e B\,n},
+\end{equation}
+where $n = 0, 1, 2, \ldots$ is the Landau quantum number and $p_3$ is the momentum component along the magnetic field direction. The corresponding wave functions are expressed in terms of Hermite functions of order~$n$. In the quasiclassical limit, the quantized states correspond to the motion on circular orbits. Additional exact solutions were obtained for a constant electric field by Sauter in 1931 and for a combination of a plane electromagnetic wave and a magnetic field by Redmond in 1965.
+
+A particularly important application of the Furry representation is the process of synchrotron radiation, $e \to e + \gamma$, in which the charged particle current is constructed from the exact solutions of the Dirac equation in the external magnetic field, and the emitted photon is described by the quantized part of the electromagnetic potential. Another significant application is the beta-decay of a neutron in a magnetic field. Already in 1964, it was shown that an asymmetry in the angular distribution of the emitted particles exists even for non-polarized neutrons, with the neutrino emission exhibiting a characteristic angular pattern with respect to the magnetic field direction.
+
+The astrophysical implications of these processes have been studied extensively. In particular, the effects of strong magnetic fields on beta-decay rates and neutrino emission spectra are of direct relevance for the dynamics of supernovae, where magnetic fields can reach values of $B \sim 10^{12}\text{--}10^{16}$~G. These studies, carried out using the method of exact solutions, have provided important input for the modeling of neutrino processes in supernovae and their implications for the supernova dynamics and nucleosynthesis.
+
+
+% ============================================================
 
 \section{Method of exact solutions for neutrinos in magnetic field and matter}
 \label{sec:nu-exact}
 
-% Based on slides 22--29: modified Dirac equation for neutrino in matter,
-% matter potential (charged and neutral currents, motion, polarization),
-% exact solutions (Studenikin, Ternov PLB 2005),
-% neutrino quantum states in dense magnetized matter,
-% spin light of neutrino, energy quantization in rotating matter.
+The method of exact solutions can be extended to describe the behaviour of neutrinos in background matter. The starting point is the modified Dirac equation for the neutrino wave function that incorporates the effective potential arising from the coherent forward scattering of neutrinos on the background particles. For a neutrino propagating through matter composed of electrons, protons, and neutrons, the addition to the vacuum neutrino Lagrangian takes the form
+\begin{equation}
+\label{eq:matter_potential}
+\Delta \mathcal{L} = \bar{\nu}\,\gamma^\mu\,(1-\gamma^5)\,\nu\,f_\mu,
+\end{equation}
+where the matter current $f_\mu = (f_0, \mathbf{f})$ accounts for both the charged-current and neutral-current interactions with the background matter. In the most general case, this effective potential also includes the effects of matter motion and polarization~\cite{Studenikin:Ternov:2005PLB,Studenikin:2006JPA,Studenikin:2008JPA}.
 
+For a Dirac-type electron neutrino $\nu_e$ propagating through uniform, non-moving, and unpolarized electron matter, the modified Dirac equation can be cast in the Hamiltonian form, and its exact solution yields the neutrino energy spectrum that depends on the helicity state. The neutrino dispersion relation in matter acquires a shift proportional to the matter density through the effective potential, which is different for left-handed and right-handed helicity states. This splitting of the energy levels is at the heart of several important phenomena, including the spin light of neutrino in matter~\cite{Egorov:2000PLB,Lobanov:Studenikin:2003PLB}.
+
+The spin light of neutrino (SL$\nu$) is a new mechanism of electromagnetic radiation by neutrinos, predicted and studied in a series of papers~\cite{Egorov:2000PLB,Lobanov:Studenikin:2003PLB,Grigoriev:2005PLB,Grigoriev:2012PLB}. Within the quantum treatment based on the method of exact solutions, this process originates from two subdivided phenomena: (i) the shift of the neutrino energy levels in the presence of background matter, which is different for the two opposite neutrino helicity states, and (ii) the radiation of a photon in the process of the neutrino transition from the ``excited'' helicity state to the low-lying helicity state in matter. The SL$\nu$ radiation exhibits a characteristic angular distribution that evolves from a cap-like pattern at moderate matter densities to a projector-like distribution at very high densities. The total radiated power and the lifetime of the excited state depend critically on the matter density, the neutrino energy, and the neutrino magnetic moment. For ultra-relativistic neutrinos with magnetic moment $\mu \sim 10^{-12}\,\mu_B$ propagating through very dense matter with $n \sim 10^{30}$~cm$^{-3}$, the SL$\nu$ lifetime can become shorter than the age of the Universe, making the effect potentially observable in extreme astrophysical environments such as supernovae~\cite{Grigoriev:2017JCAP}.
+
+Another remarkable consequence of the exact solution approach is the effect of neutrino energy quantization in rotating magnetized matter. When a neutrino with a nonzero millicharge $q$ propagates inside a rotating magnetized neutron star, the neutrino energy becomes quantized~\cite{Studenikin:2008JPA,Studenikin:Tokarev:2014NPB} in analogy with the Landau quantization of the electron energy in a magnetic field:
+\begin{equation}
+\label{eq:nu_quantization}
+E_N = E_0 + \omega_{\text{rot}}\,N, \quad N = 0, 1, 2, \ldots,
+\end{equation}
+where $\omega_{\text{rot}}$ is the angular frequency of the rotating matter and $N$ is the integer quantum number. In the quasiclassical approach, these quantum states correspond to the neutrino moving on circular orbits inside the star under the influence of an effective Lorentz force that arises from the neutrino interaction with the rotating magnetized matter.
+
+
+% ============================================================
 
 \section{Electromagnetic properties of neutrinos}
 \label{sec:emp}
 
-% Based on slides 30--69: theory of neutrino electromagnetic vertex function,
-% form factors (magnetic, electric dipole, anapole, charge),
-% Dirac vs Majorana neutrinos, diagonal and transition moments,
-% GIM cancellation, dependence on neutrino mass (KATRIN limit),
-% neutrino magnetic moment in left-right symmetric models,
-% millicharge (dequantization of electric charge in BSM),
-% charge radius and anapole moment,
-% experimental constraints from GEMMA, Borexino, XENONnT, LUX-ZEPLIN,
-% effective magnetic moment in short- and long-baseline experiments.
+\subsection{Electromagnetic vertex function and form factors}
 
+The matrix element of the neutrino electromagnetic current between neutrino states of momenta $p$ and $p'$ can be parametrized in terms of the electromagnetic vertex function, which in the most general case contains four form factors: the electric charge form factor $f_Q(q^2)$, the magnetic dipole form factor $f_M(q^2)$, the electric dipole form factor $f_E(q^2)$, and the anapole form factor $f_A(q^2)$, where $q = p - p'$ is the momentum transfer~\cite{Giunti:2015RMP}. The static electromagnetic properties of the neutrino are obtained from the values of these form factors at zero momentum transfer: the electric charge $q_\nu = f_Q(0)$, the magnetic moment $\mu_\nu = f_M(0)$, the electric dipole moment $d_\nu = f_E(0)$, and the anapole moment $a_\nu = f_A(0)$.
+
+The hermiticity and discrete symmetries of the electromagnetic current impose significant constraints on the form factors. For Dirac neutrinos, CP invariance combined with hermiticity requires the electric dipole form factor to vanish, $f_E = 0$. From CPT invariance alone (regardless of whether CP is conserved or violated), Majorana neutrinos have vanishing diagonal magnetic and electric dipole moments, making the distinction between Dirac and Majorana neutrinos through their electromagnetic properties a fundamental question in neutrino physics. As noted already by Pauli in 1939, the electromagnetic properties provide a way to distinguish between the Dirac and Majorana nature of neutrinos.
+
+In the general case of neutrino mixing, the matrix element of the electromagnetic current can be taken between different initial and final mass eigenstates $\nu_i$ and $\nu_j$, giving rise to transition form factors that are matrices in the neutrino mass eigenstate space~\cite{Dvornikov:Studenikin:2004PRD}. For Dirac neutrinos, the transition magnetic moments are suppressed by the Glashow--Iliopoulos--Maiani (GIM) cancellation mechanism, since the unitarity of the mixing matrix implies that its rows and columns represent orthogonal vectors. For the diagonal magnetic moments of Dirac neutrinos, there is no GIM cancellation, and to leading order the diagonal magnetic moment is independent of the mixing matrix elements~$U$ and the charged lepton masses.
+
+\subsection{Neutrino magnetic moment in models beyond the Standard Model}
+
+The extremely small value of the neutrino magnetic moment predicted by Eq.~(\ref{eq:mu_SM}) within the minimally extended Standard Model has motivated extensive studies of mechanisms that could enhance $\mu_\nu$ to experimentally accessible values. It was pointed out by Voloshin in 1988 that there may exist a symmetry that forbids the neutrino mass contribution but not the magnetic moment contribution, thus allowing for large magnetic moments compatible with small neutrino masses. In left-right symmetric models, additional contributions to the neutrino magnetic moment arise from the mixing of the $W_L$ and $W_R$ gauge bosons. Considerable enhancement of $\mu_\nu$ to experimentally relevant ranges has also been discussed in the context of supersymmetric models and models with extra dimensions. A model-independent constraint on the neutrino magnetic moment, derived under the assumption of no fine-tuning in models beyond the Standard Model, was obtained by Bell, Cirigliano, Ramsey-Musolf, Vogel, and Wise in 2005.
+
+\subsection{Neutrino millicharge}
+
+Although it is usually assumed that neutrinos are electrically neutral, this property is not guaranteed beyond the Standard Model. In the Standard Model, charge quantization follows from gauge invariance combined with anomaly cancellation constraints, which fix the particle hypercharges and consequently the electric charges, ensuring $q_\nu = 0$. However, in extensions of the Standard Model that include particles with zero hypercharge $Y = 0$, the strict requirements for charge quantization may disappear, and the electric charge becomes dequantized, opening the possibility of millicharged neutrinos~\cite{Studenikin:2014EPL}. The most stringent direct bound on the neutrino millicharge is $|q_\nu| < 1.5 \times 10^{-12}\,e$, obtained from the analysis of the GEMMA collaboration data on $\bar{\nu}_e$--$e$ scattering~\cite{Studenikin:2014EPL}. This limit has been included in the Table of neutrino properties by the Particle Data Group since 2016.
+
+\subsection{Charge radius and anapole moment}
+
+Even for electrically neutral neutrinos with $q_\nu = 0$, the neutrino can be characterized by two charge distributions of opposite signs, giving rise to a nonzero charge radius. The neutrino charge radius is introduced as $\langle r^2 \rangle = -6\,\frac{df_Q}{dq^2}\big|_{q^2=0}$. However, the interpretation of the charge radius as an observable is a delicate issue: the quantity $\langle r^2 \rangle$ calculated from the electromagnetic vertex function alone is in general infinite and gauge-dependent. A proper definition of the charge radius as a finite and gauge-independent quantity requires consideration of the complete set of radiative corrections to the scattering cross section~\cite{Kouzakov:Studenikin:2017PRD}. For massless neutrinos within the Standard Model, the charge radius and the anapole moment are not defined separately, and only their combination appears in the physical cross section~\cite{Giunti:2015RMP}.
+
+The neutrino charge radii have been constrained from the data of the COHERENT experiment on coherent elastic neutrino-nucleus scattering~\cite{Cadeddu:2018PRD}, providing, in particular, the first bounds on the transition charge radii. This result, highlighted as the Editors' Suggestion in Physical Review D (2018), demonstrates the promising prospects for current and upcoming neutrino-nucleus scattering experiments.
+
+\subsection{Experimental constraints}
+
+A comprehensive analysis of $\nu$--$e$ elastic scattering with proper account for neutrino mixing and oscillations~\cite{Kouzakov:Studenikin:2017PRD} has revealed that the cross section is determined in terms of $3 \times 3$ matrices of neutrino electromagnetic form factors, and that the observable quantities in short-baseline and long-baseline experiments have different physical interpretations. In short-baseline experiments, one probes the form factors in the flavour basis, while long-baseline experiments are more conveniently interpreted in terms of the fundamental form factors in the mass basis. The effective magnetic moment measured in the reactor short-baseline experiment GEMMA is $\mu_{\text{eff}}^2 = \sum_{j} |\mu_{ej}|^2$, while the effective magnetic moment measured in the solar long-baseline experiment Borexino depends on the flavour transition probabilities averaged over the source-detector distance.
+
+The world best experimental reactor limit on the neutrino magnetic moment is $\mu_\nu < 2.9 \times 10^{-11}\,\mu_B$ from the GEMMA experiment~\cite{GEMMA:2012}. The Borexino experiment has set the limit $\mu_\nu < 2.8 \times 10^{-11}\,\mu_B$ using $^7$Be solar neutrinos~\cite{Borexino:2017}. The recent XENONnT and LUX-ZEPLIN dark matter search experiments have provided competitive new limits on the effective neutrino magnetic moment. Future prospects include improved constraints from the running $\nu$GeN experiment at the Kalinin Nuclear Power Plant~\cite{Alekseev:2022PRD}, as well as new limits from coherent elastic neutrino-atom scattering using the proposed experimental setup with antineutrinos from tritium decay and a liquid helium target~\cite{Cadeddu:2019PRD}.
+
+
+% ============================================================
 
 \section{Processes of electromagnetic interactions of neutrinos}
 \label{sec:processes}
 
-% Based on slide 70 and Studenikin, J. Phys. Conf. Ser. 2156 (2022) 012120:
-% radiative decay, Cherenkov radiation, spin light (SL_nu),
-% plasmon decay in medium, electromagnetic scattering,
-% spin precession in external fields and transversal matter current.
+The nonzero electromagnetic properties of neutrinos give rise to several types of electromagnetic processes that can be of significant importance in astrophysical environments~\cite{Studenikin:2022JPCS}. The main processes include the following.
 
+The radiative neutrino decay $\nu_i \to \nu_j + \gamma$ is possible for massive neutrinos with nonzero transition magnetic or electric dipole moments. The decay rate is proportional to $|\mu_{ij}|^2 + |d_{ij}|^2$ and scales as the cube of the mass difference $(\Delta m_{ij})^3$. Due to the GIM suppression of transition moments and the small neutrino mass differences, the neutrino radiative decay lifetime is extremely long, making direct observation challenging. Nevertheless, the radiative decay has been constrained from the absence of decay photons in reactor and solar neutrino fluxes, from the SN\,1987A neutrino burst, and from the spectral distortion of the cosmic microwave background radiation.
+
+The neutrino Cherenkov radiation $\nu \to \nu + \gamma$ can occur when neutrinos propagate through a medium, where the dispersion relation is modified so that the effective refractive index exceeds unity. The helicity-flip process proceeds through the transition amplitude due to the neutrino magnetic moment, with the Cherenkov radiation rate depending on the index of refraction of the medium. A related process is the Cherenkov radiation by neutrinos in a magnetic field, which does not require physics beyond the Standard Model since the magnetic field induces an effective neutrino-photon vertex and modifies the photon dispersion relation.
+
+The spin light of neutrino in matter (SL$\nu$) has been discussed in detail in Sec.~\ref{sec:nu-exact}. In this process, a neutrino with a nonzero magnetic moment emits electromagnetic radiation as a result of the spin precession during propagation in a medium. Unlike Cherenkov radiation, the SL$\nu$ mechanism arises from the different energy shifts of the two neutrino helicity states in matter.
+
+The plasmon decay process $\gamma^* \to \nu\bar{\nu}$ in a dense medium is possible due to nonzero neutrino dipole moments or millicharges. The effective photon (plasmon) in a medium acquires an effective mass, which makes the decay kinematically allowed. The energy loss rate from this process in stellar interiors provides one of the most stringent astrophysical bounds on neutrino electromagnetic properties.
+
+The electromagnetic scattering of neutrinos on electrons, $\nu + e \to \nu + e$, includes a magnetic moment contribution that dominates at low electron recoil energies when $T \lesssim \mu^2/G_F^2\,m_e$, where $T$ is the recoil energy. This characteristic energy dependence allows experimental separation of the magnetic moment contribution from the standard weak interaction contribution.
+
+Finally, the neutrino spin precession in external electromagnetic fields and in the transversal matter current leads to flavour and helicity transitions that can have profound consequences for neutrino propagation in astrophysical environments. As predicted in~\cite{Studenikin:2004PAN}, the spin precession can be generated not only by the transversal magnetic field but also by the transversal matter current, even in the absence of a magnetic field.
+
+
+% ============================================================
 
 \section{Electromagnetic neutrinos in astrophysics and constraints on magnetic moment and millicharge}
 \label{sec:astro}
 
-% Based on slides 71--110:
-% astrophysical bounds on mu from red giant cooling (plasmon decay, Raffelt 1990),
-% neutrino radiative decay constraints,
-% SN1987A energy-loss limits,
-% spin light of neutrino in astrophysical environments (JCAP 2017),
-% constraints on millicharge from red giants, SN1987A,
-% neutrino energy quantization in rotating magnetized stars,
-% nu millicharge as star rotation engine,
-% Star Turning mechanism (Studenikin, Tokarev, NPB 2014),
-% best astrophysical bound on millicharge.
+\subsection{Astrophysical bounds on the neutrino magnetic moment}
 
+The most stringent astrophysical bound on the neutrino magnetic moment comes from the cooling of red giant stars by the plasmon decay process $\gamma^* \to \nu\bar{\nu}$~\cite{Raffelt:1990}. In the dense cores of red giants, the neutrino magnetic moment contribution to the plasmon decay enhances the standard photo-neutrino cooling, leading to a more rapid cooling of the star that slightly reduces the core temperature. The delay of helium ignition in low-mass red giants due to nonstandard neutrino energy losses can be related to the luminosity of stars before and after the helium flash, which is constrained by observations of the tip of the red-giant branch. The resulting bound is $\mu_\nu < 3 \times 10^{-12}\,\mu_B$~\cite{Raffelt:1990}, applicable to both Dirac and Majorana neutrinos.
+
+Additional bounds on the neutrino magnetic moment come from SN\,1987A observations. The proto-neutron star formed in a core-collapse supernova can cool faster if right-handed neutrinos $\nu_R$ are produced through the magnetic moment interaction, since $\nu_R$ are sterile and not trapped in the core like $\nu_L$. The observed 5--10 second pulse duration in the Kamiokande-II and IMB detectors, consistent with the standard model neutrino trapping, implies $\mu_\nu < 10^{-12}\,\mu_B$. Furthermore, the absence of anomalous high-energy neutrinos from SN\,1987A provides a comparable constraint, since the right-handed neutrinos produced in the magnetic moment scattering in the inner core would have larger energies than neutrinos emitted from the neutrino sphere.
+
+The spin light of neutrino in astrophysical environments has been studied in detail in~\cite{Grigoriev:2017JCAP}, where the SL$\nu$ radiation from neutrinos propagating through the dense matter of the accretion disk in a short gamma-ray burst model was considered. The effect of the plasmon mass on the SL$\nu$ rate was also taken into account~\cite{Grigoriev:2012PLB}.
+
+\subsection{Astrophysical bounds on the neutrino millicharge}
+
+Constraints on the neutrino millicharge from astrophysics come from several sources. The delay of helium ignition in low-mass red giants due to the additional energy losses from the millicharge contribution to the plasmon decay yields $|q_\nu| < 2 \times 10^{-14}\,e$. The absence of anomalous energy-dependent dispersion of the SN\,1987A neutrino signal provides a more model-independent bound of $|q_\nu| < 3 \times 10^{-17}\,e$. Of course, the most stringent bound on the neutrino millicharge follows from the charge neutrality of a neutron and the hydrogen atom.
+
+A particularly interesting and stringent astrophysical constraint on the neutrino millicharge comes from the effect of neutrino energy quantization in rotating magnetized neutron stars~\cite{Studenikin:Tokarev:2014NPB}. Millicharged neutrinos moving inside a rotating magnetized star are trapped in circular orbits under the influence of the effective Lorentz force. When escaping the star, these millicharged neutrinos move on curved orbits, and the feedback of the effective Lorentz force generates a torque that should affect the initial star rotation. This neutrino Star Turning ($ \nu $ST) mechanism predicts that the cumulative effect of all escaping millicharged neutrinos would shift the star's angular velocity. In order to avoid a contradiction of the $\nu$ST impact with the observational data on pulsars, a stringent limit on the neutrino millicharge at the level of $|q_\nu| < 1.3 \times 10^{-19}\,e$ was obtained~\cite{Studenikin:Tokarev:2014NPB}. This is the best astrophysical bound on the neutrino millicharge.
+
+The interest in the effects of neutrino spin oscillations in magnetic fields on supernovae neutrino fluxes has recently increased due to the forthcoming large-volume neutrino detectors --- DUNE, Hyper-Kamiokande, and JUNO --- that open new possibilities for precise determination of the flavour ratios in supernovae neutrino fluxes~\cite{Brdar:2023PRD,Jana:Porto:2024PRL}. These experiments can potentially probe the neutrino magnetic moment down to the level of $\mu_\nu \sim 10^{-15}\,\mu_B$.
+
+
+% ============================================================
 
 \section{Brief history of neutrino oscillations}
 \label{sec:history}
 
-% Based on slides 111--112: Pontecorvo (1957, 1958),
-% Gribov--Pontecorvo (1969), MSW effect,
-% spin and spin-flavour oscillations in magnetic field,
-% Akhmedov (1988), Lim--Marciano resonance.
+The story of neutrino mixing and oscillations started with two seminal papers by Bruno Pontecorvo in 1957~\cite{Pontecorvo:1957} and 1958~\cite{Pontecorvo:1958}, where the possibility of neutrino--antineutrino transitions (by analogy with $K^0$--$\bar{K}^0$ oscillations) was discussed for the first time. In 1962, following the discovery of the second flavour neutrino $\nu_\mu$, the phenomenon of neutrino mixing was formulated, in which the fields of the weak neutrinos $\nu_e$ and $\nu_\mu$ are connected with the neutrino mass states $\nu_1$ and $\nu_2$ by the unitary mixing matrix $U$ parametrized by the mixing angle $\theta$:
+\begin{equation}
+\label{eq:mixing}
+\nu_e = \nu_1 \cos\theta + \nu_2 \sin\theta, \qquad \nu_\mu = -\nu_1 \sin\theta + \nu_2 \cos\theta.
+\end{equation}
+The first analytical expression for the neutrino oscillation probability was obtained by Gribov and Pontecorvo in 1969~\cite{Gribov:Pontecorvo:1969}. In 1978, the effect of neutrino interaction with matter of a constant density on neutrino flavour mixing and oscillations was investigated by Wolfenstein~\cite{Wolfenstein:1978}. The existence of resonant amplification of neutrino mixing (the MSW effect) when a neutrino flux propagates through a medium with varying density was predicted by Mikheev and Smirnov in 1985~\cite{Mikheev:Smirnov:1985}.
 
+The neutrino spin oscillations $\nu^L \Leftrightarrow \nu^R$ induced by the neutrino magnetic moment interaction with a transversal magnetic field $\mathbf{B}_\perp$ were first considered by Cisneros in 1971~\cite{Cisneros:1971}. The spin-flavour oscillations $\nu_e^L \Leftrightarrow \nu_\mu^R$ in $\mathbf{B}_\perp$ in vacuum were discussed by Schechter and Valle in 1981, and the importance of the matter effect was emphasized by Okun, Voloshin, and Vysotsky in 1986~\cite{Okun:1986}. The effect of the resonant amplification of neutrino spin oscillations in $\mathbf{B}_\perp$ in the presence of matter, similar to the MSW effect, was proposed by Akhmedov in 1988 and by Lim and Marciano in 1988. The tedious studies of neutrino oscillations, both experimental and theoretical, over the last 60 years have been honoured by the Nobel Prize of 2015 awarded to Arthur McDonald and Takaaki Kajita for the discovery of neutrino oscillations, which shows that neutrinos have mass.
+
+
+% ============================================================
 
 \section{New effects in flavour and spin oscillations of neutrinos}
 \label{sec:new-effects}
 
-% Based on slides 113--137 and arXiv:1912.12491:
-% neutrino spin oscillations engendered by transversal matter current
-%   (Studenikin, Phys.Atom.Nucl. 2004; Pustoshny, Studenikin PRD 2018),
-% quantum treatment (4-component evolution equation),
-% resonance amplification by matter currents,
-% interplay of flavour and spin oscillations in constant B
-%   (Popov, Studenikin, EPJC 2019),
-% modulation of flavour oscillation amplitude by magnetic frequency,
-% new effect: modification of flavour oscillations probability
-%   in moving matter by transversal current j_perp = n v_perp,
-% Majorana CP phases inducing new resonances in supernovae
-%   (Popov, Studenikin, PRD 2021),
-% neutrino quantum decoherence from radiative decay
-%   (Stankevich, Studenikin, PRD 2020),
-% generalized Lindblad master equation
-%   (Stankevich, Studenikin, Vyalkov, PRD 2025),
-% high-energy neutrinos flavour composition as probe of magnetic moments
-%   (Popov, Studenikin, PRD 2025).
+\subsection{Neutrino spin oscillations engendered by transversal matter current}
 
+A remarkable new effect in neutrino spin oscillations was predicted in~\cite{Studenikin:2004PAN}: the neutrino spin or spin-flavour oscillations can be engendered without any magnetic field or neutrino magnetic moment, but as a result of the weak interaction of neutrinos with the transversal matter current or transversal matter polarization. To derive this effect, one considers an electron neutrino spin precession in the case when neutrinos with the Standard Model interaction are propagating through moving and polarized matter composed of electrons in the presence of an electromagnetic field given by the tensor $F_{\mu\nu} = (\mathbf{E}, \mathbf{B})$. Using the generalized Bargmann--Michel--Telegdi equation for the three-dimensional neutrino spin vector $\mathbf{S}$,
+\begin{equation}
+\label{eq:BMT}
+\frac{d\mathbf{S}}{dt} = \frac{2\mu}{\gamma}\Big[\mathbf{S} \times (\mathbf{B}_0 + \mathbf{M}_0)\Big],
+\end{equation}
+where $\mathbf{B}_0$ is the magnetic field in the neutrino rest frame and $\mathbf{M}_0$ is the effective matter term, one finds that the matter contribution $\mathbf{M}_0$ has both longitudinal $\mathbf{M}_{0\parallel}$ and transversal $\mathbf{M}_{0\perp}$ components with respect to the neutrino propagation direction. The transversal component $\mathbf{M}_{0\perp}$ is proportional to the transversal velocity $\mathbf{v}_{e\perp}$ of the background matter. The neutrino spin oscillation probability engendered by the transversal matter current was obtained in~\cite{Studenikin:2004PAN}:
+\begin{equation}
+\label{eq:spin_osc_matter}
+P_{\nu_e^L \to \nu_e^R}(x) = \sin^2 2\theta_{\text{eff}}\,\sin^2\frac{\pi x}{L_{\text{eff}}},
+\end{equation}
+where the effective mixing angle and oscillation length depend on the longitudinal and transversal components of the matter potential.
+
+This effect has been confirmed by several independent groups in studies of neutrino propagation in astrophysical media~\cite{Serreau:Volpe:2014PRD,Cirigliano:2015PLB,Kartavtsev:2015PRD}. A detailed quantum treatment of the phenomenon was developed in~\cite{Pustoshny:Studenikin:2018PRD}, where the spin evolution effective Hamiltonian in moving matter was derived for two flavour neutrinos with two helicities, described by the four-component vector $\nu_f = (\nu_e^+, \nu_e^-, \nu_\mu^+, \nu_\mu^-)^T$. The resulting $4 \times 4$ evolution equation accounts for the effects of both the transversal and longitudinal matter currents:
+\begin{equation}
+\label{eq:evolution}
+i\frac{d}{dt}\begin{pmatrix}\nu_e^L \\ \nu_e^R\end{pmatrix} = \begin{pmatrix} (\frac{\eta}{\gamma})_{ee}\,B_\parallel + \tilde{G}n(1-\mathbf{v}\boldsymbol{\beta}) & \mu_{ee}\,B_\perp + (\frac{\eta}{\gamma})_{ee}\,\tilde{G}n\,v_\perp \\ \mu_{ee}\,B_\perp + (\frac{\eta}{\gamma})_{ee}\,\tilde{G}n\,v_\perp & -(\frac{\eta}{\gamma})_{ee}\,B_\parallel - \tilde{G}n(1-\mathbf{v}\boldsymbol{\beta}) \end{pmatrix} \begin{pmatrix}\nu_e^L \\ \nu_e^R\end{pmatrix},
+\end{equation}
+where the off-diagonal terms contain contributions from both the magnetic field $B_\perp$ and the transversal matter current $\tilde{G}n\,v_\perp$. From Eqs.~(\ref{eq:evolution}) it follows that even in the absence of the transversal magnetic field, the neutrino spin oscillations $\nu_e^L \Leftrightarrow \nu_e^R$ can be generated by the neutrino interaction with the transversal matter current $\mathbf{j}_\perp = n\mathbf{v}_\perp$. The effect was applied to astrophysical scenarios including the model of a short gamma-ray burst, where neutrinos escaping from a central neutron star propagate through a toroidal bulk of rotating dense matter~\cite{Grigoriev:2017JCAP}.
+
+\subsection{Interplay of flavour and spin oscillations in a constant magnetic field}
+
+A fundamentally important new phenomenon has been established in~\cite{Popov:Studenikin:2019EPJC}: an inherent interplay between the neutrino flavour and spin oscillations in a constant magnetic field. Within a new approach based on the exact quantum stationary states in the magnetic field (rather than the helicity states that are not stationary in a magnetic field), it has been shown that for a given choice of parameters the amplitude of the flavour oscillations $\nu_e^L \Leftrightarrow \nu_\mu^L$ at the vacuum frequency $\omega_{vac} = \frac{\Delta m^2}{4p}$ is modulated by the magnetic field frequency $\omega_B = \mu B_\perp$. The probability of flavour oscillations in the presence of the transversal magnetic field $B_\perp$ is given by~\cite{Popov:Studenikin:2019EPJC,Studenikin:2019arXiv}
+\begin{equation}
+\label{eq:flavour_B}
+P_{\nu_e^L \to \nu_\mu^L}^{(B_\perp)}(t) = \Big(1 - \sin^2(\mu B_\perp t)\Big)\,\sin^2 2\theta\,\sin^2\frac{\Delta m^2}{4p}\,t = \Big(1 - P_{\nu_e^L \to \nu_e^R}^{\text{cust}}\Big)\,P_{\nu_e^L \to \nu_\mu^L}^{\text{cust}},
+\end{equation}
+where $\mu$ is the effective magnetic moment, and the relation $\mu_1 = \mu_2 = \mu$ with $\mu_{12} = 0$ is assumed. The expression for the flavour oscillation probability in the magnetic field is modified by the factor $1 - P_{\nu_e^L \to \nu_e^R}^{\text{cust}}$, which represents the probability of not changing the neutrino spin polarization. This result demonstrates that the flavour and spin oscillations cannot be treated as separate, independent phenomena in the presence of a magnetic field.
+
+Similarly, the amplitude of the spin oscillations $\nu_e^L \Leftrightarrow \nu_e^R$ on the magnetic frequency $\omega_B$ is modulated by the vacuum frequency $\omega_{vac}$, and the spin oscillation probability acquires a dependence on the mass-squared difference $\Delta m^2$. The spin-flavour oscillation probability $\nu_e^L \Leftrightarrow \nu_\mu^R$ exhibits the interplay of both frequencies in a more complex pattern~\cite{Popov:Studenikin:2019EPJC}. This discovered correspondence between flavour and spin oscillations in a magnetic field can be important in studies of neutrino propagation in astrophysical environments, in particular for ultrahigh-energy cosmic neutrinos in interstellar magnetic fields~\cite{Chotorlishvili:2017PRD}.
+
+\subsection{Modification of flavour oscillations by transversal matter current}
+
+From the results discussed in the previous subsections, it follows that the neutrino flavour and spin oscillations are inherently interrelated. On the one hand, the amplitude of the neutrino flavour oscillations is modulated by the magnetic frequency $\omega_B = \mu B_\perp$. On the other hand, the transversal magnetic field $\mathbf{B}_\perp$ and the transversal matter current $\mathbf{j}_\perp$ play an equal role in the generation of the neutrino spin and spin-flavour oscillations. From these observations, a new phenomenon was predicted~\cite{Studenikin:2019arXiv}: the modification of the flavour neutrino oscillations probability in moving matter that can be engendered by a non-vanishing matter transversal current $\mathbf{j}_\perp = n\mathbf{v}_\perp$.
+
+The flavour neutrino oscillation probability accounting for this effect, under quite reasonable conditions, takes the form~\cite{Studenikin:2019arXiv,Studenikin:2024PPN}
+\begin{equation}
+\label{eq:flavour_matter}
+P_{\nu_e^L \to \nu_\mu^L}^{(j_\parallel + j_\perp)}(t) = \Big(1 - P_{\nu_e^L \to \nu_e^R}^{(j_\perp)} - P_{\nu_e^L \to \nu_\mu^R}^{(j_\perp)}\Big)\,P_{\nu_e^L \to \nu_\mu^L}^{(j_\parallel)},
+\end{equation}
+where $P_{\nu_e^L \to \nu_\mu^L}^{(j_\parallel)}$ is the flavour oscillation probability in moving matter (modified by the longitudinal component of the matter motion only), and the terms $P_{\nu_e^L \to \nu_e^R}^{(j_\perp)}$ and $P_{\nu_e^L \to \nu_\mu^R}^{(j_\perp)}$ are the probabilities of the neutrino spin and spin-flavour oscillations engendered by the transversal matter current $\mathbf{j}_\perp$, respectively. The new effect represents the interplay of the customary flavour oscillation on the effective frequency $\omega_{eff}$ in moving matter and two additional oscillations with changing the neutrino polarization --- the spin $\nu_e^L \Leftrightarrow (j_\perp) \Rightarrow \nu_e^R$ and spin-flavour $\nu_e^L \Leftrightarrow (j_\perp) \Rightarrow \nu_\mu^R$ oscillations --- governed by two characteristic frequencies
+\begin{equation}
+\label{eq:omega_j}
+\omega_{ee}^{j_\perp} = \tilde{G}n\sqrt{\Big(\frac{\eta}{\gamma}\Big)_{ee}^2\,v_\perp^2 + (1-\mathbf{v}\boldsymbol{\beta})^2}\,,
+\end{equation}
+and
+\begin{equation}
+\label{eq:omega_emu}
+\omega_{e\mu}^{j_\perp} = \tilde{G}n\sqrt{\Big(\frac{\eta}{\gamma}\Big)_{e\mu}^2\,v_\perp^2 + \Big(\frac{\Delta M}{\tilde{G}n} - (1-\mathbf{v}\boldsymbol{\beta})\Big)^2}\,.
+\end{equation}
+This interplay of oscillations on different frequencies can lead to important consequences when neutrino fluxes propagate in astrophysical environments peculiar to rotating compact objects or dense jets of matter.
+
+\subsection{Majorana CP phases and new resonances in supernovae}
+
+In a recent study~\cite{Popov:Studenikin:2021PRD}, the role of the Majorana CP-violating phases in neutrino oscillations in a strong magnetic field and dense matter of supernovae has been investigated for both neutrino mass hierarchies. It has been shown that the Majorana CP phases induce new resonances in neutrino-antineutrino oscillations. The detection of supernovae neutrino fluxes in the future experiments JUNO, DUNE, and Hyper-Kamiokande can give an insight into the nature of CP violation and, consequently, provide a tool for distinguishing the Dirac or Majorana nature of neutrinos.
+
+\subsection{Neutrino quantum decoherence and recent developments}
+
+The neutrino radiative decay has been considered as a source of quantum decoherence in extreme astrophysical environments in~\cite{Stankevich:Studenikin:2020PRD}, with observable consequences for the supernovae neutrino fluxes at JUNO, DUNE, and Hyper-Kamiokande. A generalized Lindblad master equation for the neutrino evolution, accounting for the effects of decoherence, has been recently derived in~\cite{Stankevich:2025PRD}. Furthermore, a new study of the high-energy neutrinos flavour composition as a probe of neutrino magnetic moments has been performed in~\cite{Popov:Studenikin:2025PRD}, and electromagnetic interactions in elastic neutrino-nucleon scattering have been investigated in~\cite{Kouzakov:2025PRD}.
+
+
+% ============================================================
 
 \section{Conclusions}
 \label{sec:conclusions}
+
+We have presented a comprehensive review of neutrino and electron interactions in external electromagnetic fields and matter, covering the theoretical foundations, experimental constraints, and new physical effects.
+
+The method of exact solutions of the Dirac equation --- the Furry representation --- provides a powerful and consistent framework for treating particle processes in strong electromagnetic fields and dense media, which is particularly relevant for astrophysical environments such as supernovae and neutron stars.
+
+The electromagnetic properties of massive neutrinos --- magnetic moment, electric dipole moment, millicharge, charge radius, and anapole moment --- represent a window to new physics beyond the Standard Model. Despite extensive experimental efforts, no confirmed evidence in favour of nonzero neutrino electromagnetic properties has been obtained, and the existing data from both laboratory experiments and astrophysical observations are consistent with the Standard Model prediction of extremely small electromagnetic characteristics. The most stringent constraints come from the reactor experiment GEMMA ($\mu_\nu < 2.9 \times 10^{-11}\,\mu_B$), the solar experiment Borexino, the astrophysical bound from red giant cooling ($\mu_\nu < 3 \times 10^{-12}\,\mu_B$), and the neutrino Star Turning mechanism for the millicharge ($|q_\nu| < 1.3 \times 10^{-19}\,e$). The future experiments JUNO, DUNE, Hyper-Kamiokande, and the $\nu$GeN experiment provide promising prospects for improving these limits.
+
+Several important new effects in neutrino oscillations have been discussed. First, the neutrino spin and spin-flavour oscillations can be engendered by the transversal matter current even in the absence of a magnetic field, which is a purely Standard Model weak interaction effect. Second, there exists an inherent interplay between the neutrino flavour and spin oscillations in a magnetic field, manifested through the mutual modulation of the oscillation amplitudes on the vacuum and magnetic frequencies. Third, the flavour neutrino oscillation probability in moving matter is modified by the transversal matter current through the spin and spin-flavour oscillation channels. These effects can have important phenomenological consequences for neutrino propagation in extreme astrophysical environments, and their investigation in the context of forthcoming large-scale neutrino detectors represents a promising direction for future research.
 
 
 % ============================================================
 
 \section*{Acknowledgements}
 
-This work is performed within the Programme No.\,8 of the National Centre for Physics and Mathematics ``Effects of neutrino electromagnetic properties in neutrino propagation and interaction in matter'' and is supported by the Russian Science Foundation under grant No.\,24-12-00084.
+The author is thankful to the organizers of the 25th Hellenic School and Workshops on Elementary Particle Physics and Gravity for the kind invitation and hospitality. This work is performed within the Programme No.\,8 of the National Centre for Physics and Mathematics ``Effects of neutrino electromagnetic properties in neutrino propagation and interaction in matter'' and is supported by the Russian Science Foundation under grant No.\,24-12-00084.
 
 \bibliographystyle{unsrt}
 \bibliography{references}
