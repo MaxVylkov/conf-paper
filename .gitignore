@@ -1,0 +1,21 @@
+# Materials folder (not for Overleaf)
+Презенация/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.nav
+*.snm
+*.vrb
+*.run.xml
+*.bcf
+
+# macOS
+.DS_Store
