@@ -1,33 +1,8 @@
-\documentclass[12pt,a4paper]{article}
-
-% Encoding and language
-\usepackage[utf8]{inputenc}
-\usepackage[T2A]{fontenc}
-\usepackage[english]{babel}
-
-% Page layout
-\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
-
-% Mathematics
-\usepackage{amsmath, amssymb, amsfonts}
-
-% Graphics and tables
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{caption}
-\usepackage{subcaption}
-
-% Hyperlinks
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,
-    citecolor=black,
-    urlcolor=blue
-}
-
-% Bibliography
-\usepackage{cite}
+% Please make sure you insert your
+% data according to the instructions in PoSauthmanual.pdf
+\documentclass[a4paper,11pt]{article}
+\usepackage{pos}
+\usepackage{amssymb}
 
 % Path to figures
 \graphicspath{{figures/}}
@@ -35,25 +10,26 @@
 % ============================================================
 
 \title{Neutrinos and electrons in external fields and matter}
+\ShortTitle{Neutrinos and electrons in external fields and matter}
 
-\author{
-    A.\,I.~Studenikin\\
-    \small Department of Theoretical Physics, Lomonosov Moscow State University, 119991 Moscow, Russia\\
-    \small Joint Institute for Nuclear Research, 141980 Dubna, Russia\\
-    \small \texttt{studenik@srd.sinp.msu.ru}
-}
+\author*[a,b]{A.\,I.~Studenikin}
 
-\date{}
+\affiliation[a]{Department of Theoretical Physics, Lomonosov Moscow State University,\\
+119991 Moscow, Russia}
+
+\affiliation[b]{Joint Institute for Nuclear Research,\\
+141980 Dubna, Russia}
+
+\emailAdd{studenik@srd.sinp.msu.ru}
+
+\abstract{We review the method of exact solutions of the Dirac equation in external electromagnetic fields and matter (the Furry representation) and its applications to neutrino and electron processes. The electromagnetic properties of massive neutrinos --- magnetic and electric dipole moments, millicharge, charge radius, and anapole moment --- are discussed in the context of theoretical predictions and experimental constraints from both terrestrial laboratory experiments and astrophysical observations. The processes of electromagnetic interactions of neutrinos and their astrophysical probes are considered, including the spin light of neutrino in matter, neutrino energy quantization in rotating magnetized stars, and the neutrino star turning mechanism. We also discuss new effects in neutrino flavour, spin, and spin-flavour oscillations in magnetic fields and moving matter, including the generation of neutrino spin oscillations by the transversal matter current, the inherent interplay of oscillations on vacuum and magnetic frequencies, and the modification of the flavour neutrino oscillations probability engendered by a non-vanishing matter transversal current $\mathbf{j}_\perp = n\mathbf{v}_\perp$.}
+
+\FullConference{25th Hellenic School and Workshops on Elementary Particle Physics and Gravity\\
+1--10 September 2025\\
+Corfu, Greece}
 
 \begin{document}
-
 \maketitle
-
-\begin{abstract}
-We review the method of exact solutions of the Dirac equation in external electromagnetic fields and matter (the Furry representation) and its applications to neutrino and electron processes. The electromagnetic properties of massive neutrinos --- magnetic and electric dipole moments, millicharge, charge radius, and anapole moment --- are discussed in the context of theoretical predictions and experimental constraints from both terrestrial laboratory experiments and astrophysical observations. The processes of electromagnetic interactions of neutrinos and their astrophysical probes are considered, including the spin light of neutrino in matter, neutrino energy quantization in rotating magnetized stars, and the neutrino star turning mechanism. We also discuss new effects in neutrino flavour, spin, and spin-flavour oscillations in magnetic fields and moving matter, including the generation of neutrino spin oscillations by the transversal matter current, the inherent interplay of oscillations on vacuum and magnetic frequencies, and the modification of the flavour neutrino oscillations probability engendered by a non-vanishing matter transversal current $\mathbf{j}_\perp = n\mathbf{v}_\perp$.
-\end{abstract}
-
-\noindent\textbf{Keywords:} neutrino electromagnetic properties, magnetic moment, millicharge, neutrino oscillations, spin oscillations, Furry representation, exact solutions, moving matter.
 
 % ============================================================
 
@@ -631,7 +607,338 @@ Three important new effects in neutrino oscillations have been discussed. First,
 
 The author is thankful to the organizers of the 25th Hellenic School and Workshops on Elementary Particle Physics and Gravity for the kind invitation and hospitality. This work is performed within the Programme No.\,8 of the National Centre for Physics and Mathematics ``Effects of neutrino electromagnetic properties in neutrino propagation and interaction in matter'' and is supported by the Russian Science Foundation under grant No.\,24-12-00084.
 
-\bibliographystyle{unsrt}
-\bibliography{references}
+\begin{thebibliography}{99}
+
+\bibitem{Giunti:2015RMP}
+C.~Giunti and A.~Studenikin,
+Neutrino electromagnetic interactions: A window to new physics,
+{\em Rev. Mod. Phys.} {\bf 87} (2015) 531.
+
+\bibitem{Studenikin:2022PoS}
+A.~Studenikin,
+Overview of neutrino electromagnetic properties,
+{\em PoS (NuFact2021)} {\bf 402} (2022) 052.
+
+\bibitem{Studenikin:2024PPN}
+A.~Studenikin,
+Electromagnetic properties of neutrino 2023,
+{\em Phys. Part. Nucl.} {\bf 55} (2024) 1444.
+
+\bibitem{Fujikawa:Shrock:1980}
+K.~Fujikawa and R.~Shrock,
+Magnetic moment of a massive neutrino and neutrino-spin rotation,
+{\em Phys. Rev. Lett.} {\bf 45} (1980) 963.
+
+\bibitem{KATRIN:2024}
+M.~Aker et~al.,
+Direct neutrino-mass measurement based on 259 days of KATRIN data,
+arXiv:2406.13516 (2024).
+
+\bibitem{GEMMA:2012}
+A.~Beda et~al.,
+GEMMA experiment: Results and perspectives,
+{\em Adv. High Energy Phys.} {\bf 2012} (2012) 350150.
+
+\bibitem{Borexino:2017}
+M.~Agostini et~al.,
+Limiting neutrino magnetic moments with Borexino Phase-II solar neutrino data,
+{\em Phys. Rev. D} {\bf 96} (2017) 091103.
+
+\bibitem{Raffelt:1990}
+G.~Raffelt,
+New bound on neutrino dipole moments from globular-cluster stars,
+{\em Phys. Rev. Lett.} {\bf 64} (1990) 2856.
+
+\bibitem{Studenikin:Tokarev:2014NPB}
+A.~Studenikin and I.~Tokarev,
+Millicharged neutrino and the neutrino star turning mechanism,
+{\em Nucl. Phys. B} {\bf 884} (2014) 396.
+
+\bibitem{Studenikin:2019arXiv}
+A.~I.~Studenikin,
+New neutrino spin oscillations in moving matter and magnetic fields,
+arXiv:1912.12491 (2019).
+
+\bibitem{Sokolov:Ternov:1964}
+A.~A.~Sokolov and I.~M.~Ternov,
+On polarization and spin effects in the theory of synchrotron radiation,
+{\em Sov. Phys. J.} {\bf 6} (1964) 86.
+
+\bibitem{Matese:Johnson:1969PR}
+J.~J.~Matese and R.~F.~Johnson,
+Neutron beta decay in a uniform constant magnetic field,
+{\em Phys. Rev.} {\bf 180} (1969) 1289.
+
+\bibitem{Matese:Johnson:1969Nature}
+J.~J.~Matese and R.~F.~Johnson,
+Primordial helium production in ``magnetic'' cosmologies,
+{\em Nature} {\bf 223} (1969) 938.
+
+\bibitem{Shinkevich:Studenikin:2005}
+S.~Shinkevich and A.~Studenikin,
+Relativistic theory of inverse beta-decay of polarized neutron in strong magnetic field,
+{\em Pramana} {\bf 65} (2005) 215.
+
+\bibitem{Studenikin:2004PRD}
+A.~Studenikin,
+Neutrino processes and implications in supernovae dynamics,
+{\em Phys. Rev. D} {\bf 69} (2004) 123004.
+
+\bibitem{Studenikin:2008JPA}
+A.~Studenikin,
+Method of wave equations exact solutions in studies of neutrinos and electron interactions in dense matter,
+{\em J. Phys. A: Math. Theor.} {\bf 41} (2008) 164047.
+
+\bibitem{Studenikin:Ternov:2005PLB}
+A.~Studenikin and A.~Ternov,
+Neutrino quantum states and spin light of neutrino in matter,
+{\em Phys. Lett. B} {\bf 608} (2005) 107.
+
+\bibitem{Studenikin:2006JPA}
+A.~Studenikin,
+Quantum treatment of neutrino in background matter,
+{\em J. Phys. A: Math. Gen.} {\bf 39} (2006) 6769.
+
+\bibitem{Egorov:2000PLB}
+A.~Egorov, A.~Lobanov, and A.~Studenikin,
+Spin light of neutrino in matter,
+{\em Phys. Lett. B} {\bf 491} (2000) 137.
+
+\bibitem{Lobanov:Studenikin:2003PLB}
+A.~Lobanov and A.~Studenikin,
+Spin light of neutrino in matter and electromagnetic fields,
+{\em Phys. Lett. B} {\bf 564} (2003) 27.
+
+\bibitem{Grigoriev:2005PLB}
+A.~Grigoriev, A.~Studenikin, and A.~Ternov,
+Quantum theory of neutrino spin light,
+{\em Phys. Lett. B} {\bf 622} (2005) 199.
+
+\bibitem{Grigoriev:2012PLB}
+A.~Grigoriev, A.~Lokhov, A.~Studenikin, and A.~Ternov,
+The effect of plasmon mass on spin light of neutrino in dense matter,
+{\em Phys. Lett. B} {\bf 718} (2012) 512.
+
+\bibitem{Grigoriev:2017JCAP}
+A.~Grigoriev, A.~Lokhov, A.~Studenikin, and A.~Ternov,
+Spin light of neutrino in astrophysical environments,
+{\em JCAP} {\bf 11} (2017) 024.
+
+\bibitem{Dvornikov:Studenikin:2002JHEP}
+M.~Dvornikov and A.~Studenikin,
+Neutrino spin evolution in presence of general external fields,
+{\em JHEP} {\bf 09} (2002) 016.
+
+\bibitem{Grigoriev:Savochkin:Studenikin:2007}
+A.~Grigoriev, A.~Savochkin, and A.~Studenikin,
+Neutrino quantum states in rotating matter,
+{\em Russ. Phys. J.} {\bf 50} (2007) 845.
+
+\bibitem{Dvornikov:Studenikin:2004PRD}
+M.~Dvornikov and A.~Studenikin,
+Neutrino electromagnetic vertex function,
+{\em Phys. Rev. D} {\bf 69} (2004) 073001.
+
+\bibitem{Voloshin:1988}
+M.~B.~Voloshin,
+On compatibility of small mass with large magnetic moment of neutrino,
+{\em Sov. J. Nucl. Phys.} {\bf 48} (1988) 512.
+
+\bibitem{Barr:Freire:Zee:1990}
+S.~M.~Barr, E.~M.~Freire, and A.~Zee,
+Mechanism for large neutrino magnetic moments,
+{\em Phys. Rev. Lett.} {\bf 65} (1990) 2626.
+
+\bibitem{Babu:Jana:Lindner:2020}
+K.~S.~Babu, S.~Jana, and M.~Lindner,
+Large neutrino magnetic moments in the light of recent experiments,
+{\em JHEP} {\bf 10} (2020) 040.
+
+\bibitem{Xing:Zhou:2012}
+Z.~Z.~Xing and Y.~L.~Zhou,
+Enhanced electromagnetic transition dipole moments and radiative decays of massive neutrinos due to the seesaw-induced non-unitary effects,
+{\em Phys. Lett. B} {\bf 715} (2012) 178.
+
+\bibitem{Bell:2005}
+N.~F.~Bell, V.~Cirigliano, M.~J.~Ramsey-Musolf, P.~Vogel, and M.~B.~Wise,
+How magnetic is the Dirac neutrino?,
+{\em Phys. Rev. Lett.} {\bf 95} (2005) 151802.
+
+\bibitem{Studenikin:2014EPL}
+A.~Studenikin,
+New bounds on neutrino electric millicharge from limits on neutrino magnetic moment,
+{\em Europhys. Lett.} {\bf 107} (2014) 21001.
+
+\bibitem{Kouzakov:Studenikin:2017PRD}
+K.~Kouzakov and A.~Studenikin,
+Electromagnetic properties of massive neutrinos in low-energy elastic neutrino-electron scattering,
+{\em Phys. Rev. D} {\bf 95} (2017) 055013.
+
+\bibitem{Cadeddu:2018PRD}
+M.~Cadeddu, C.~Giunti, K.~Kouzakov, Yu-Feng~Li, A.~Studenikin, and Y.~Y.~Zhang,
+Neutrino charge radii from COHERENT elastic neutrino-nucleus scattering,
+{\em Phys. Rev. D} {\bf 98} (2018) 113010.
+
+\bibitem{XENONnT:2022}
+E.~Aprile et~al.,
+Search for new physics in electronic recoil data from XENONnT,
+{\em Phys. Rev. Lett.} {\bf 129} (2022) 161805.
+
+\bibitem{Corona:2023PRD}
+M.~Atzori~Corona, W.~Bonivento, M.~Cadeddu, N.~Cargioli, and F.~Dordei,
+New constraint on neutrino magnetic moment from LZ dark matter search results,
+{\em Phys. Rev. D} {\bf 107} (2023) 053001.
+
+\bibitem{Alekseev:2022PRD}
+I.~Alekseev et~al.,
+First results of the $\nu$GeN experiment on coherent elastic neutrino-nucleus scattering,
+{\em Phys. Rev. D} {\bf 106} (2022) L051101.
+
+\bibitem{Cadeddu:2019PRD}
+M.~Cadeddu, F.~Dordei, C.~Giunti, K.~Kouzakov, E.~Picciau, and A.~Studenikin,
+Potentialities of a low-energy detector based on $^4$He evaporation to observe atomic effects in coherent neutrino scattering,
+{\em Phys. Rev. D} {\bf 100} (2019) 073014.
+
+\bibitem{Studenikin:2022JPCS}
+A.~Studenikin,
+Electromagnetic neutrino: The basic processes and astrophysical probes,
+{\em J. Phys. Conf. Ser.} {\bf 2156} (2022) 012120.
+
+\bibitem{Studenikin:2004PAN}
+A.~Studenikin,
+Neutrino in electromagnetic fields and moving matter,
+{\em Phys. Atom. Nucl.} {\bf 67} (2004) 993.
+
+\bibitem{ArceoDiaz:2015}
+S.~Arceo-D\'{\i}az, K.-P.~Schr\"{o}der, K.~Zuber, and D.~Jack,
+Constraint on the magnetic moment of neutrinos from the tip of the red-giant branch of the globular cluster $\omega$-Centauri,
+{\em Astropart. Phys.} {\bf 70} (2015) 1.
+
+\bibitem{Brdar:2023PRD}
+V.~Brdar, A.~de~Gouv\^{e}a, Y.-Y.~Li, and P.~Machado,
+The neutrino magnetic moment portal and supernovae,
+{\em Phys. Rev. D} {\bf 107} (2023) 073005.
+
+\bibitem{Jana:Porto:2024PRL}
+S.~Jana and Y.~Porto,
+New resonances of supernova neutrinos in magnetic fields,
+{\em Phys. Rev. Lett.} {\bf 132} (2024) 101005.
+
+\bibitem{Pontecorvo:1957}
+B.~Pontecorvo,
+Mesonium and antimesonium,
+{\em Sov. Phys. JETP} {\bf 6} (1957) 429.
+
+\bibitem{Pontecorvo:1958}
+B.~Pontecorvo,
+Inverse beta processes and nonconservation of lepton charge,
+{\em Sov. Phys. JETP} {\bf 7} (1958) 172.
+
+\bibitem{Gribov:Pontecorvo:1969}
+V.~Gribov and B.~Pontecorvo,
+Neutrino astronomy and lepton charge,
+{\em Phys. Lett. B} {\bf 28} (1969) 493.
+
+\bibitem{Wolfenstein:1978}
+L.~Wolfenstein,
+Neutrino oscillations in matter,
+{\em Phys. Rev. D} {\bf 17} (1978) 2369.
+
+\bibitem{Mikheev:Smirnov:1985}
+S.~Mikheev and A.~Smirnov,
+Resonance amplification of oscillations in matter and spectroscopy of solar neutrinos,
+{\em Sov. J. Nucl. Phys.} {\bf 42} (1985) 913.
+
+\bibitem{Grigoriev:Lobanov:Studenikin:2002PLB}
+A.~Grigoriev, A.~Lobanov, and A.~Studenikin,
+Generalization of the MSW resonance condition for neutrino oscillations in moving matter,
+{\em Phys. Lett. B} {\bf 535} (2002) 187.
+
+\bibitem{Cisneros:1971}
+A.~Cisneros,
+Effect of neutrino magnetic moment on solar neutrino observations,
+{\em Astrophys. Space Sci.} {\bf 10} (1971) 87.
+
+\bibitem{Okun:1986}
+L.~Okun, M.~Voloshin, and M.~Vysotsky,
+Neutrino electrodynamics and possible effects for solar neutrinos,
+{\em Sov. J. Nucl. Phys.} {\bf 44} (1986) 440.
+
+\bibitem{Lobanov:Studenikin:2001PLB}
+A.~Lobanov and A.~Studenikin,
+Neutrino spin oscillations in external fields and matter,
+{\em Phys. Lett. B} {\bf 515} (2001) 94.
+
+\bibitem{Pustoshny:Studenikin:2018PRD}
+P.~Pustoshny and A.~Studenikin,
+Neutrino spin and spin-flavour oscillations in transversal matter currents with standard and non-standard interactions,
+{\em Phys. Rev. D} {\bf 98} (2018) 113009.
+
+\bibitem{Popov:Studenikin:2019EPJC}
+A.~Popov and A.~Studenikin,
+Neutrino eigenstates and flavour, spin and spin-flavour oscillations in a constant magnetic field,
+{\em Eur. Phys. J. C} {\bf 79} (2019) 144.
+
+\bibitem{Chotorlishvili:2017PRD}
+L.~Chotorlishvili, K.~Kouzakov, R.~Kurashvili, and A.~Studenikin,
+Spin-flavor oscillations of ultrahigh-energy cosmic neutrinos in interstellar space: The role of neutrino magnetic moments,
+{\em Phys. Rev. D} {\bf 96} (2017) 103017.
+
+\bibitem{Popov:Studenikin:2021PRD}
+A.~Popov and A.~Studenikin,
+Neutrino oscillations in magnetic field and dense matter of supernovae and the role of Majorana CP phases,
+{\em Phys. Rev. D} {\bf 103} (2021) 115027.
+
+\bibitem{Serreau:Volpe:2014PRD}
+J.~Serreau and C.~Volpe,
+Neutrino-antineutrino correlations in dense anisotropic media,
+{\em Phys. Rev. D} {\bf 90} (2014) 125040.
+
+\bibitem{Cirigliano:2015PLB}
+V.~Cirigliano, G.~M.~Fuller, and A.~Vlasenko,
+A new spin on neutrino quantum kinetics,
+{\em Phys. Lett. B} {\bf 747} (2015) 27.
+
+\bibitem{Kartavtsev:2015PRD}
+A.~Kartavtsev, G.~Raffelt, and H.~Vogel,
+Neutrino propagation in media: flavor-, helicity-, and pair correlations,
+{\em Phys. Rev. D} {\bf 91} (2015) 125020.
+
+\bibitem{Studenikin:2016EPJ}
+A.~Studenikin,
+Neutrino electromagnetic properties: three new effects in neutrino spin oscillations,
+{\em EPJ Web Conf.} {\bf 125} (2016) 04018.
+
+\bibitem{Fabbricatore:2016}
+R.~Fabbricatore, A.~Grigoriev, and A.~Studenikin,
+Neutrino spin-flavour oscillations derived from the mass basis,
+{\em J. Phys. Conf. Ser.} {\bf 718} (2016) 062058.
+
+\bibitem{Grigoriev:2024RuPhJ}
+A.~Grigoriev, A.~Studenikin, and A.~Ternov,
+Spin light of neutrino in moving matter,
+{\em Russ. Phys. J.} {\bf 67} (2024) 1864.
+
+\bibitem{Stankevich:Studenikin:2020PRD}
+K.~Stankevich and A.~Studenikin,
+Neutrino quantum decoherence engendered by neutrino radiative decay,
+{\em Phys. Rev. D} {\bf 101} (2020) 056004.
+
+\bibitem{Stankevich:2025PRD}
+K.~Stankevich, A.~Studenikin, and M.~Vyalkov,
+Generalized Lindblad master equation for neutrino evolution,
+{\em Phys. Rev. D} {\bf 111} (2025) 036014.
+
+\bibitem{Popov:Studenikin:2025PRD}
+A.~Popov and A.~Studenikin,
+High-energy neutrinos flavour composition as a probe of neutrino magnetic moments,
+{\em Phys. Rev. D} {\bf 111} (2025) 123001.
+
+\bibitem{Kouzakov:2025PRD}
+K.~Kouzakov, F.~Lazarev, and A.~Studenikin,
+Electromagnetic interactions in elastic neutrino-nucleon scattering,
+{\em Phys. Rev. D} {\bf 111} (2025) 035025.
+
+\end{thebibliography}
 
 \end{document}
