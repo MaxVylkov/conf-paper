@@ -1,0 +1,72 @@
+\documentclass[12pt,a4paper]{article}
+
+% Кодировка и язык
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+% Поля страницы
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+% Математика
+\usepackage{amsmath, amssymb, amsfonts}
+
+% Графика и таблицы
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Гиперссылки
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue
+}
+
+% Библиография
+\usepackage{cite}
+
+% Путь к изображениям
+\graphicspath{{figures/}}
+
+% ============================================================
+
+\title{Название статьи}
+
+\author{
+    Автор~И.\,О.\\
+    \small Организация\\
+    \small \texttt{email@example.com}
+}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Аннотация статьи.
+\end{abstract}
+
+\textbf{Ключевые слова:} ключевое слово 1, ключевое слово 2.
+
+% ============================================================
+
+\section{Введение}
+
+\section{Основная часть}
+
+\section{Результаты}
+
+\section{Заключение}
+
+% ============================================================
+
+\bibliographystyle{ugost2008}
+\bibliography{references}
+
+\end{document}
